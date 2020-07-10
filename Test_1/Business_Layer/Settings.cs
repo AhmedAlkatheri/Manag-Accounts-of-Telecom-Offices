@@ -74,7 +74,7 @@ namespace Test_1.Business_Layer
             Data_Access_Layer.DAL dal = new Data_Access_Layer.DAL();
             SqlParameter[] param = new SqlParameter[1];
 
-            param[0] = new SqlParameter("@ID", SqlDbType.VarChar);
+            param[0] = new SqlParameter("@ID", SqlDbType.VarChar, 50);
             param[0].Value = ID;
 
             DataTable Dt = new DataTable();
@@ -96,19 +96,16 @@ namespace Test_1.Business_Layer
             return Dt;
         }
 
-        public void ADD_telecom_Table(String NAME_telecom, int ID_system)
+        public void ADD_telecom_Table(String NAME_telecom)
         {
             Data_Access_Layer.DAL dal = new Data_Access_Layer.DAL();
             dal.open();
 
-            SqlParameter[] param = new SqlParameter[2];
+            SqlParameter[] param = new SqlParameter[1];
 
 
             param[0] = new SqlParameter("@NAME_telecom", SqlDbType.VarChar);
             param[0].Value = NAME_telecom;
-
-            param[1] = new SqlParameter("@ID_system", SqlDbType.Int);
-            param[1].Value = ID_system;
 
             dal.executeCommand("ADD_telecom_Table", param);
             dal.close();
@@ -129,12 +126,12 @@ namespace Test_1.Business_Layer
             dal.close();
         }
 
-        public void EDIT_telecom_Table(int ID_telecom, string NAME_telecom, int ID_system)
+        public void EDIT_telecom_Table(int ID_telecom, string NAME_telecom)
         {
             Data_Access_Layer.DAL dal = new Data_Access_Layer.DAL();
             dal.open();
 
-            SqlParameter[] param = new SqlParameter[3];
+            SqlParameter[] param = new SqlParameter[2];
 
 
             param[0] = new SqlParameter("@ID_telecom", SqlDbType.Int);
@@ -143,9 +140,7 @@ namespace Test_1.Business_Layer
             param[1] = new SqlParameter("@NAME_telecom", SqlDbType.VarChar);
             param[1].Value = NAME_telecom;
 
-            param[2] = new SqlParameter("@ID_system", SqlDbType.Int);
-            param[2].Value = ID_system;
-
+           
             dal.executeCommand("EDIT_telecom_Table", param);
             dal.close();
         }
@@ -155,7 +150,7 @@ namespace Test_1.Business_Layer
             Data_Access_Layer.DAL dal = new Data_Access_Layer.DAL();
             SqlParameter[] param = new SqlParameter[1];
 
-            param[0] = new SqlParameter("@ID", SqlDbType.VarChar);
+            param[0] = new SqlParameter("@ID", SqlDbType.VarChar, 50);
             param[0].Value = ID;
 
             DataTable Dt = new DataTable();
@@ -265,7 +260,7 @@ namespace Test_1.Business_Layer
             Data_Access_Layer.DAL dal = new Data_Access_Layer.DAL();
             SqlParameter[] param = new SqlParameter[1];
 
-            param[0] = new SqlParameter("@ID", SqlDbType.VarChar);
+            param[0] = new SqlParameter("@ID", SqlDbType.VarChar, 50);
             param[0].Value = ID;
 
             DataTable Dt = new DataTable();
@@ -375,7 +370,7 @@ namespace Test_1.Business_Layer
             Data_Access_Layer.DAL dal = new Data_Access_Layer.DAL();
             SqlParameter[] param = new SqlParameter[1];
 
-            param[0] = new SqlParameter("@ID", SqlDbType.VarChar);
+            param[0] = new SqlParameter("@ID", SqlDbType.VarChar, 50);
             param[0].Value = ID;
 
             DataTable Dt = new DataTable();
@@ -473,7 +468,7 @@ namespace Test_1.Business_Layer
             Data_Access_Layer.DAL dal = new Data_Access_Layer.DAL();
             SqlParameter[] param = new SqlParameter[1];
 
-            param[0] = new SqlParameter("@ID", SqlDbType.VarChar);
+            param[0] = new SqlParameter("@ID", SqlDbType.VarChar, 50);
             param[0].Value = ID;
 
             DataTable Dt = new DataTable();
@@ -544,7 +539,7 @@ namespace Test_1.Business_Layer
             Data_Access_Layer.DAL dal = new Data_Access_Layer.DAL();
             SqlParameter[] param = new SqlParameter[1];
 
-            param[0] = new SqlParameter("@ID", SqlDbType.VarChar);
+            param[0] = new SqlParameter("@ID", SqlDbType.VarChar, 50);
             param[0].Value = ID;
 
             DataTable Dt = new DataTable();
@@ -560,7 +555,7 @@ namespace Test_1.Business_Layer
             Data_Access_Layer.DAL dal = new Data_Access_Layer.DAL();
             SqlParameter[] param = new SqlParameter[1];
 
-            param[0] = new SqlParameter("@ID", SqlDbType.VarChar);
+            param[0] = new SqlParameter("@ID", SqlDbType.VarChar, 50);
             param[0].Value = ID;
 
             DataTable Dt = new DataTable();
@@ -652,7 +647,7 @@ namespace Test_1.Business_Layer
             Data_Access_Layer.DAL dal = new Data_Access_Layer.DAL();
             SqlParameter[] param = new SqlParameter[1];
 
-            param[0] = new SqlParameter("@ID", SqlDbType.VarChar);
+            param[0] = new SqlParameter("@ID", SqlDbType.VarChar, 50);
             param[0].Value = ID;
 
             DataTable Dt = new DataTable();
@@ -698,7 +693,7 @@ namespace Test_1.Business_Layer
             dal.close();
         }
 
-        public void DELETE_water_And_Electricity_Table(int ID_slice)
+        public void DELETE_water_And_Electricity_Table(int ID_WandE)
         {
             Data_Access_Layer.DAL dal = new Data_Access_Layer.DAL();
             dal.open();
@@ -706,8 +701,8 @@ namespace Test_1.Business_Layer
             SqlParameter[] param = new SqlParameter[1];
 
 
-            param[0] = new SqlParameter("@ID_telephone", SqlDbType.Int);
-            param[0].Value = ID_slice;
+            param[0] = new SqlParameter("@ID_WandE", SqlDbType.Int);
+            param[0].Value = ID_WandE;
 
             dal.executeCommand("DELETE_water_And_Electricity_Table", param);
             dal.close();
@@ -723,7 +718,7 @@ namespace Test_1.Business_Layer
             param[0] = new SqlParameter("@ID_WandE", SqlDbType.Int);
             param[0].Value = ID_WandE;
 
-            param[1] = new SqlParameter("@NAME_WandE", SqlDbType.VarChar);
+            param[1] = new SqlParameter("@NAME_WandE", SqlDbType.VarChar, 50);
             param[1].Value = NAME_WandE;
 
             param[2] = new SqlParameter("@REC_WandE", SqlDbType.Int);
@@ -850,7 +845,5 @@ namespace Test_1.Business_Layer
 
             return Dt;
         }
-
-
     }
 }

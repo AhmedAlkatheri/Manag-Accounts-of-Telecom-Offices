@@ -11,12 +11,16 @@ namespace Test_1
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+
+        public static int id_user;
+        public static string userName;
+
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_Layer.Form_main());
+            Application.Run(new License_Layer.Form_License());
         }
     }
 }

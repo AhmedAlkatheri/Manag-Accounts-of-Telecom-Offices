@@ -28,30 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Client_Reveal));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.status_txt = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.count_row_tx = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.TOTEL_tx = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.TOTEL_REC_tx = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.TOTEL_EXH_tx = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.PDF_bt = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuFlatButton7 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.client_tx = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.Date1 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.Search_bt = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.client_tx = new System.Windows.Forms.TextBox();
+            this.Date2 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.DataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -62,115 +71,214 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel5.Controls.Add(this.button2);
-            this.panel5.Controls.Add(this.dateTimePicker2);
-            this.panel5.Controls.Add(this.dateTimePicker1);
-            this.panel5.Controls.Add(this.label12);
-            this.panel5.Controls.Add(this.label11);
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.status_txt);
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.count_row_tx);
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.TOTEL_tx);
+            this.panel5.Controls.Add(this.label9);
+            this.panel5.Controls.Add(this.TOTEL_REC_tx);
+            this.panel5.Controls.Add(this.TOTEL_EXH_tx);
             this.panel5.Location = new System.Drawing.Point(12, 108);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1109, 70);
+            this.panel5.Size = new System.Drawing.Size(1208, 88);
             this.panel5.TabIndex = 117;
             // 
-            // button2
+            // label2
             // 
-            this.button2.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(331, 17);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button2.Size = new System.Drawing.Size(58, 28);
-            this.button2.TabIndex = 69;
-            this.button2.Text = "بحث";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(182, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 18);
+            this.label2.TabIndex = 154;
+            this.label2.Text = "حالة";
             // 
-            // dateTimePicker2
+            // status_txt
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(470, 19);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 29;
+            this.status_txt.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.status_txt.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.status_txt.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.status_txt.BorderThickness = 3;
+            this.status_txt.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.status_txt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.status_txt.Enabled = false;
+            this.status_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.status_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.status_txt.isPassword = false;
+            this.status_txt.Location = new System.Drawing.Point(77, 19);
+            this.status_txt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.status_txt.MaxLength = 32767;
+            this.status_txt.Name = "status_txt";
+            this.status_txt.Size = new System.Drawing.Size(98, 32);
+            this.status_txt.TabIndex = 153;
+            this.status_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // dateTimePicker1
+            // label8
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(801, 19);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 28;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(386, 27);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 18);
+            this.label8.TabIndex = 152;
+            this.label8.Text = "الرصيد";
             // 
-            // label12
+            // count_row_tx
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label12.Font = new System.Drawing.Font("Droid Arabic Kufi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(700, 17);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(35, 28);
-            this.label12.TabIndex = 27;
-            this.label12.Text = "الى";
+            this.count_row_tx.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.count_row_tx.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.count_row_tx.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.count_row_tx.BorderThickness = 3;
+            this.count_row_tx.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.count_row_tx.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.count_row_tx.Enabled = false;
+            this.count_row_tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.count_row_tx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.count_row_tx.isPassword = false;
+            this.count_row_tx.Location = new System.Drawing.Point(988, 19);
+            this.count_row_tx.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.count_row_tx.MaxLength = 32767;
+            this.count_row_tx.Name = "count_row_tx";
+            this.count_row_tx.Size = new System.Drawing.Size(98, 32);
+            this.count_row_tx.TabIndex = 145;
+            this.count_row_tx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label11
+            // label7
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label11.Font = new System.Drawing.Font("Droid Arabic Kufi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(1039, 17);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 28);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "من";
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(607, 27);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 18);
+            this.label7.TabIndex = 150;
+            this.label7.Text = "اجمالي عليه ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(1093, 27);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 18);
+            this.label6.TabIndex = 146;
+            this.label6.Text = "عدد سجيلات";
+            // 
+            // TOTEL_tx
+            // 
+            this.TOTEL_tx.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.TOTEL_tx.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TOTEL_tx.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.TOTEL_tx.BorderThickness = 3;
+            this.TOTEL_tx.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TOTEL_tx.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TOTEL_tx.Enabled = false;
+            this.TOTEL_tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TOTEL_tx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TOTEL_tx.isPassword = false;
+            this.TOTEL_tx.Location = new System.Drawing.Point(281, 19);
+            this.TOTEL_tx.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TOTEL_tx.MaxLength = 32767;
+            this.TOTEL_tx.Name = "TOTEL_tx";
+            this.TOTEL_tx.Size = new System.Drawing.Size(98, 32);
+            this.TOTEL_tx.TabIndex = 149;
+            this.TOTEL_tx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(859, 27);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 18);
+            this.label9.TabIndex = 148;
+            this.label9.Text = "اجمالي له";
+            // 
+            // TOTEL_REC_tx
+            // 
+            this.TOTEL_REC_tx.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.TOTEL_REC_tx.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TOTEL_REC_tx.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.TOTEL_REC_tx.BorderThickness = 3;
+            this.TOTEL_REC_tx.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TOTEL_REC_tx.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TOTEL_REC_tx.Enabled = false;
+            this.TOTEL_REC_tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TOTEL_REC_tx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TOTEL_REC_tx.isPassword = false;
+            this.TOTEL_REC_tx.Location = new System.Drawing.Point(754, 20);
+            this.TOTEL_REC_tx.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TOTEL_REC_tx.MaxLength = 32767;
+            this.TOTEL_REC_tx.Name = "TOTEL_REC_tx";
+            this.TOTEL_REC_tx.Size = new System.Drawing.Size(98, 32);
+            this.TOTEL_REC_tx.TabIndex = 151;
+            this.TOTEL_REC_tx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TOTEL_EXH_tx
+            // 
+            this.TOTEL_EXH_tx.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.TOTEL_EXH_tx.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TOTEL_EXH_tx.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.TOTEL_EXH_tx.BorderThickness = 3;
+            this.TOTEL_EXH_tx.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TOTEL_EXH_tx.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TOTEL_EXH_tx.Enabled = false;
+            this.TOTEL_EXH_tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TOTEL_EXH_tx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TOTEL_EXH_tx.isPassword = false;
+            this.TOTEL_EXH_tx.Location = new System.Drawing.Point(502, 20);
+            this.TOTEL_EXH_tx.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TOTEL_EXH_tx.MaxLength = 32767;
+            this.TOTEL_EXH_tx.Name = "TOTEL_EXH_tx";
+            this.TOTEL_EXH_tx.Size = new System.Drawing.Size(98, 32);
+            this.TOTEL_EXH_tx.TabIndex = 147;
+            this.TOTEL_EXH_tx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(63)))), ((int)(((byte)(80)))));
-            this.panel1.Controls.Add(this.bunifuFlatButton2);
+            this.panel1.Controls.Add(this.PDF_bt);
             this.panel1.Controls.Add(this.bunifuFlatButton7);
-            this.panel1.Controls.Add(this.bunifuFlatButton3);
-            this.panel1.Controls.Add(this.bunifuFlatButton6);
-            this.panel1.Controls.Add(this.bunifuFlatButton1);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.bunifuFlatButton5);
             this.panel1.Controls.Add(this.bunifuFlatButton4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1153, 0);
+            this.panel1.Location = new System.Drawing.Point(1229, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(185, 603);
+            this.panel1.Size = new System.Drawing.Size(185, 676);
             this.panel1.TabIndex = 121;
             // 
-            // bunifuFlatButton2
+            // PDF_bt
             // 
-            this.bunifuFlatButton2.Active = false;
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "تقرير";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = null;
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 90D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 77);
-            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(63)))), ((int)(((byte)(80)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(185, 44);
-            this.bunifuFlatButton2.TabIndex = 12;
-            this.bunifuFlatButton2.Text = "تقرير";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PDF_bt.ActiveBorderThickness = 1;
+            this.PDF_bt.ActiveCornerRadius = 20;
+            this.PDF_bt.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.PDF_bt.ActiveForecolor = System.Drawing.Color.White;
+            this.PDF_bt.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.PDF_bt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(63)))), ((int)(((byte)(80)))));
+            this.PDF_bt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PDF_bt.BackgroundImage")));
+            this.PDF_bt.ButtonText = "عمل تقرير";
+            this.PDF_bt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PDF_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PDF_bt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.PDF_bt.IdleBorderThickness = 1;
+            this.PDF_bt.IdleCornerRadius = 20;
+            this.PDF_bt.IdleFillColor = System.Drawing.Color.White;
+            this.PDF_bt.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.PDF_bt.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.PDF_bt.Location = new System.Drawing.Point(50, 618);
+            this.PDF_bt.Margin = new System.Windows.Forms.Padding(5);
+            this.PDF_bt.Name = "PDF_bt";
+            this.PDF_bt.Size = new System.Drawing.Size(93, 44);
+            this.PDF_bt.TabIndex = 147;
+            this.PDF_bt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PDF_bt.Click += new System.EventHandler(this.PDF_bt_Click);
             // 
             // bunifuFlatButton7
             // 
@@ -194,11 +302,11 @@
             this.bunifuFlatButton7.IconVisible = true;
             this.bunifuFlatButton7.IconZoom = 90D;
             this.bunifuFlatButton7.IsTab = false;
-            this.bunifuFlatButton7.Location = new System.Drawing.Point(0, 304);
+            this.bunifuFlatButton7.Location = new System.Drawing.Point(0, 17);
             this.bunifuFlatButton7.Margin = new System.Windows.Forms.Padding(6);
             this.bunifuFlatButton7.Name = "bunifuFlatButton7";
             this.bunifuFlatButton7.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton7.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(63)))), ((int)(((byte)(80)))));
+            this.bunifuFlatButton7.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(101)))), ((int)(((byte)(131)))));
             this.bunifuFlatButton7.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton7.selected = false;
             this.bunifuFlatButton7.Size = new System.Drawing.Size(185, 44);
@@ -206,125 +314,7 @@
             this.bunifuFlatButton7.Text = "تحديث";
             this.bunifuFlatButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton7.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton7.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuFlatButton3
-            // 
-            this.bunifuFlatButton3.Active = false;
-            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton3.BorderRadius = 0;
-            this.bunifuFlatButton3.ButtonText = "تعديل";
-            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.Iconimage = null;
-            this.bunifuFlatButton3.Iconimage_right = null;
-            this.bunifuFlatButton3.Iconimage_right_Selected = null;
-            this.bunifuFlatButton3.Iconimage_Selected = null;
-            this.bunifuFlatButton3.IconMarginLeft = 0;
-            this.bunifuFlatButton3.IconMarginRight = 0;
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconRightZoom = 0D;
-            this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.IconZoom = 90D;
-            this.bunifuFlatButton3.IsTab = false;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(0, 258);
-            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
-            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(63)))), ((int)(((byte)(80)))));
-            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(185, 44);
-            this.bunifuFlatButton3.TabIndex = 10;
-            this.bunifuFlatButton3.Text = "تعديل";
-            this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuFlatButton6
-            // 
-            this.bunifuFlatButton6.Active = false;
-            this.bunifuFlatButton6.Activecolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton6.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton6.BorderRadius = 0;
-            this.bunifuFlatButton6.ButtonText = "حذف";
-            this.bunifuFlatButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton6.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton6.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton6.Iconimage = null;
-            this.bunifuFlatButton6.Iconimage_right = null;
-            this.bunifuFlatButton6.Iconimage_right_Selected = null;
-            this.bunifuFlatButton6.Iconimage_Selected = null;
-            this.bunifuFlatButton6.IconMarginLeft = 0;
-            this.bunifuFlatButton6.IconMarginRight = 0;
-            this.bunifuFlatButton6.IconRightVisible = true;
-            this.bunifuFlatButton6.IconRightZoom = 0D;
-            this.bunifuFlatButton6.IconVisible = true;
-            this.bunifuFlatButton6.IconZoom = 90D;
-            this.bunifuFlatButton6.IsTab = false;
-            this.bunifuFlatButton6.Location = new System.Drawing.Point(0, 202);
-            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuFlatButton6.Name = "bunifuFlatButton6";
-            this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton6.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(63)))), ((int)(((byte)(80)))));
-            this.bunifuFlatButton6.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton6.selected = false;
-            this.bunifuFlatButton6.Size = new System.Drawing.Size(185, 44);
-            this.bunifuFlatButton6.TabIndex = 9;
-            this.bunifuFlatButton6.Text = "حذف";
-            this.bunifuFlatButton6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton6.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton6.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Active = false;
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "اكسل";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = null;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(-2, 23);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(63)))), ((int)(((byte)(80)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(185, 44);
-            this.bunifuFlatButton1.TabIndex = 8;
-            this.bunifuFlatButton1.Text = "اكسل";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(-5, 146);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "________________________________";
+            this.bunifuFlatButton7.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // bunifuFlatButton5
             // 
@@ -360,7 +350,7 @@
             this.bunifuFlatButton5.Text = "تحديث";
             this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton5.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton5.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton5.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // bunifuFlatButton4
             // 
@@ -396,52 +386,156 @@
             this.bunifuFlatButton4.Text = "تعديل";
             this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton4.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.txtSearch);
+            this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.client_tx);
+            this.panel3.Controls.Add(this.Date1);
+            this.panel3.Controls.Add(this.Search_bt);
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.Date2);
             this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label5);
             this.panel3.Location = new System.Drawing.Point(12, 17);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1109, 70);
+            this.panel3.Size = new System.Drawing.Size(1208, 85);
             this.panel3.TabIndex = 116;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.txtSearch.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSearch.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.txtSearch.BorderThickness = 3;
+            this.txtSearch.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSearch.isPassword = false;
+            this.txtSearch.Location = new System.Drawing.Point(689, 18);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSearch.MaxLength = 32767;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(125, 32);
+            this.txtSearch.TabIndex = 146;
+            this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(838, 24);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(31, 18);
+            this.label10.TabIndex = 145;
+            this.label10.Text = "بحث";
+            // 
+            // client_tx
+            // 
+            this.client_tx.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.client_tx.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.client_tx.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.client_tx.BorderThickness = 3;
+            this.client_tx.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.client_tx.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.client_tx.Enabled = false;
+            this.client_tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.client_tx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.client_tx.isPassword = false;
+            this.client_tx.Location = new System.Drawing.Point(979, 18);
+            this.client_tx.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.client_tx.MaxLength = 32767;
+            this.client_tx.Name = "client_tx";
+            this.client_tx.Size = new System.Drawing.Size(125, 32);
+            this.client_tx.TabIndex = 144;
+            this.client_tx.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // Date1
+            // 
+            this.Date1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.Date1.BorderRadius = 0;
+            this.Date1.ForeColor = System.Drawing.Color.White;
+            this.Date1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Date1.FormatCustom = null;
+            this.Date1.Location = new System.Drawing.Point(410, 18);
+            this.Date1.Name = "Date1";
+            this.Date1.Size = new System.Drawing.Size(193, 31);
+            this.Date1.TabIndex = 141;
+            this.Date1.Value = new System.DateTime(2019, 7, 24, 15, 41, 48, 762);
+            // 
+            // Search_bt
+            // 
+            this.Search_bt.Location = new System.Drawing.Point(77, 18);
+            this.Search_bt.Name = "Search_bt";
+            this.Search_bt.Size = new System.Drawing.Size(64, 32);
+            this.Search_bt.TabIndex = 142;
+            this.Search_bt.Text = "عرض";
+            this.Search_bt.UseVisualStyleBackColor = true;
+            this.Search_bt.Click += new System.EventHandler(this.Search_bt_Click);
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(780, 19);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(929, 18);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(43, 28);
+            this.button1.Size = new System.Drawing.Size(43, 32);
             this.button1.TabIndex = 68;
             this.button1.Text = "...";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // client_tx
+            // Date2
             // 
-            this.client_tx.Enabled = false;
-            this.client_tx.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.client_tx.Location = new System.Drawing.Point(839, 19);
-            this.client_tx.Name = "client_tx";
-            this.client_tx.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.client_tx.Size = new System.Drawing.Size(141, 28);
-            this.client_tx.TabIndex = 67;
-            this.client_tx.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Date2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.Date2.BorderRadius = 0;
+            this.Date2.ForeColor = System.Drawing.Color.White;
+            this.Date2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Date2.FormatCustom = null;
+            this.Date2.Location = new System.Drawing.Point(166, 18);
+            this.Date2.Name = "Date2";
+            this.Date2.Size = new System.Drawing.Size(193, 31);
+            this.Date2.TabIndex = 143;
+            this.Date2.Value = new System.DateTime(2019, 7, 24, 15, 41, 48, 762);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label3.Font = new System.Drawing.Font("Droid Arabic Kufi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1018, 22);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1124, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 28);
+            this.label3.Size = new System.Drawing.Size(40, 18);
             this.label3.TabIndex = 66;
             this.label3.Text = "حساب";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(609, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(22, 18);
+            this.label4.TabIndex = 139;
+            this.label4.Text = "من";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(365, 24);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(24, 18);
+            this.label5.TabIndex = 140;
+            this.label5.Text = "الى";
             // 
             // DataGrid1
             // 
@@ -453,8 +547,8 @@
             this.DataGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.DataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(63)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -471,7 +565,7 @@
             this.DataGrid1.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGrid1.DoubleBuffered = true;
             this.DataGrid1.EnableHeadersVisualStyles = false;
-            this.DataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(63)))), ((int)(((byte)(80)))));
+            this.DataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.DataGrid1.HeaderForeColor = System.Drawing.Color.White;
             this.DataGrid1.Location = new System.Drawing.Point(12, 202);
             this.DataGrid1.Name = "DataGrid1";
@@ -487,24 +581,26 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGrid1.RowHeadersVisible = false;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGrid1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.LightGray;
             this.DataGrid1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.DataGrid1.RowTemplate.Height = 40;
             this.DataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGrid1.Size = new System.Drawing.Size(1109, 392);
-            this.DataGrid1.TabIndex = 122;
+            this.DataGrid1.Size = new System.Drawing.Size(1208, 469);
+            this.DataGrid1.TabIndex = 123;
             // 
             // Form_Client_Reveal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1338, 603);
+            this.ClientSize = new System.Drawing.Size(1414, 676);
             this.Controls.Add(this.DataGrid1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Form_Client_Reveal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Client_Reveal";
@@ -512,7 +608,6 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid1)).EndInit();
@@ -524,23 +619,31 @@
 
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton7;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
+        public Bunifu.Framework.UI.BunifuMetroTextbox client_tx;
+        private Bunifu.Framework.UI.BunifuDatepicker Date1;
+        private System.Windows.Forms.Button Search_bt;
+        private Bunifu.Framework.UI.BunifuDatepicker Date2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private Bunifu.Framework.UI.BunifuMetroTextbox TOTEL_tx;
+        private Bunifu.Framework.UI.BunifuMetroTextbox TOTEL_REC_tx;
+        private Bunifu.Framework.UI.BunifuMetroTextbox TOTEL_EXH_tx;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private Bunifu.Framework.UI.BunifuMetroTextbox count_row_tx;
+        private System.Windows.Forms.Label label2;
+        private Bunifu.Framework.UI.BunifuMetroTextbox status_txt;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtSearch;
+        private System.Windows.Forms.Label label10;
+        private Bunifu.Framework.UI.BunifuThinButton2 PDF_bt;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGrid1;
-        private System.Windows.Forms.Button button2;
-        public System.Windows.Forms.TextBox client_tx;
     }
 }

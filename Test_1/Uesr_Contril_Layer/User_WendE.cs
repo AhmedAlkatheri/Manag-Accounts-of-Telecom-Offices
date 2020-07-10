@@ -19,6 +19,9 @@ namespace Test_1.Uesr_Contril_Layer
         {
             InitializeComponent();
             DataGrid1.DataSource = S.SHOW_water_And_Electricity_Table();
+
+            DataGrid1.Columns[0].Visible    = false;
+            DataGrid1.Columns[1].Width      = 120;
         }
 
         private void insert_bt_Click(object sender, EventArgs e)
@@ -77,7 +80,7 @@ namespace Test_1.Uesr_Contril_Layer
             IA.REC_tx.Text = this.DataGrid1.CurrentRow.Cells[2].Value.ToString();
             IA.EXH_tx.Text = this.DataGrid1.CurrentRow.Cells[3].Value.ToString();
             IA.system_cob.Text = this.DataGrid1.CurrentRow.Cells[4].Value.ToString();
-            IA.telecom_cob.Text = this.DataGrid1.CurrentRow.Cells[5].Value.ToString();
+            //IA.telecom_cob.Text = this.DataGrid1.CurrentRow.Cells[5].Value.ToString();
             IA.ShowDialog();
 
             DataGrid1.DataSource = S.SHOW_water_And_Electricity_Table();

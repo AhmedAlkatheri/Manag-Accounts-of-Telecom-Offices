@@ -50,6 +50,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tyap_com = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,7 +106,7 @@
             this.but_close.IdleFillColor = System.Drawing.Color.DarkGray;
             this.but_close.IdleIconLeftImage = null;
             this.but_close.IdleIconRightImage = null;
-            this.but_close.Location = new System.Drawing.Point(275, 601);
+            this.but_close.Location = new System.Drawing.Point(275, 607);
             this.but_close.Name = "but_close";
             stateProperties5.BorderColor = System.Drawing.Color.Gray;
             stateProperties5.BorderRadius = 1;
@@ -138,7 +140,7 @@
             this.but_ok.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.but_ok.IdleIconLeftImage = null;
             this.but_ok.IdleIconRightImage = null;
-            this.but_ok.Location = new System.Drawing.Point(90, 601);
+            this.but_ok.Location = new System.Drawing.Point(90, 607);
             this.but_ok.Name = "but_ok";
             stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             stateProperties6.BorderRadius = 1;
@@ -165,10 +167,10 @@
             this.MOBILE_tx.isPassword = false;
             this.MOBILE_tx.Location = new System.Drawing.Point(230, 363);
             this.MOBILE_tx.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MOBILE_tx.MaxLength = 12;
+            this.MOBILE_tx.MaxLength = 9;
             this.MOBILE_tx.Name = "MOBILE_tx";
             this.MOBILE_tx.Size = new System.Drawing.Size(182, 44);
-            this.MOBILE_tx.TabIndex = 2;
+            this.MOBILE_tx.TabIndex = 5;
             this.MOBILE_tx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.MOBILE_tx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MOBILE_tx_KeyPress);
             // 
@@ -188,7 +190,7 @@
             this.TELEPHONE_tx.MaxLength = 12;
             this.TELEPHONE_tx.Name = "TELEPHONE_tx";
             this.TELEPHONE_tx.Size = new System.Drawing.Size(182, 44);
-            this.TELEPHONE_tx.TabIndex = 3;
+            this.TELEPHONE_tx.TabIndex = 4;
             this.TELEPHONE_tx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TELEPHONE_tx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MOBILE_tx_KeyPress);
             // 
@@ -238,7 +240,7 @@
             this.ADRESS_tx.MaxLength = 50;
             this.ADRESS_tx.Name = "ADRESS_tx";
             this.ADRESS_tx.Size = new System.Drawing.Size(182, 44);
-            this.ADRESS_tx.TabIndex = 4;
+            this.ADRESS_tx.TabIndex = 3;
             this.ADRESS_tx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label4
@@ -267,7 +269,7 @@
             this.EMAIL_tx.MaxLength = 50;
             this.EMAIL_tx.Name = "EMAIL_tx";
             this.EMAIL_tx.Size = new System.Drawing.Size(182, 44);
-            this.EMAIL_tx.TabIndex = 5;
+            this.EMAIL_tx.TabIndex = 2;
             this.EMAIL_tx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label5
@@ -358,18 +360,44 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.for_tx);
-            this.panel1.Location = new System.Drawing.Point(76, 443);
+            this.panel1.Location = new System.Drawing.Point(76, 456);
             this.panel1.Name = "panel1";
             this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.panel1.Size = new System.Drawing.Size(338, 130);
             this.panel1.TabIndex = 44;
             this.panel1.Visible = false;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(70, 441);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(60, 20);
+            this.label9.TabIndex = 45;
+            this.label9.Text = "صلاحيات";
+            this.label9.Visible = false;
+            // 
+            // tyap_com
+            // 
+            this.tyap_com.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tyap_com.FormattingEnabled = true;
+            this.tyap_com.Items.AddRange(new object[] {
+            "مدير",
+            "عادي"});
+            this.tyap_com.Location = new System.Drawing.Point(231, 443);
+            this.tyap_com.Name = "tyap_com";
+            this.tyap_com.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tyap_com.Size = new System.Drawing.Size(182, 21);
+            this.tyap_com.TabIndex = 46;
+            // 
             // Form_new_Client_Alternate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 676);
+            this.Controls.Add(this.tyap_com);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.EMAIL_tx);
             this.Controls.Add(this.label5);
@@ -418,5 +446,8 @@
         public System.Windows.Forms.Panel panel1;
         public Bunifu.Framework.UI.BunifuMetroTextbox acc_tx;
         public Bunifu.Framework.UI.BunifuMetroTextbox MOBILE_tx;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.ComboBox tyap_com;
+        //public Bunifu.UI.WinForms.BunifuDropdown tyap_com;
     }
 }

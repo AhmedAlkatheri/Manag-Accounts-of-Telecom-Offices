@@ -117,34 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column8.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column10.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column9.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PDF_bt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAF0AAAAsCAYAAAAHD7SnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ9SURBVHhe7ZrbS1RRFMb7nzYUVnpmMoaJooyhYh6MCSoh
+        ukiWxcyEhNVDmPjgg0UaIkEQiDmaWVgERRfyYboQ9lB0UUK6kEQ3ia+95uxOTnOy2+zZL98PPhg4c+bh
+        dw5rr9l7LVBeHZjKhtIdhNIdhNIdhNIdhNIdZH7p0QRUogk1jd2I7D+D6uwgVHqECYm4EUdeUy/Uun1Q
+        tevDner8Wvqa7fAODGFnzw2M5qdw5/FrTL75ABKOuBFHVx68RHPfbURahrEomQ51WypdPyFv1wmkOq/i
+        1cwn85Pkb5n5+AV7em8i0nwaanmyyHGxdC08mh1A/62n5lbyv1yfmEb8YA4qVh8uXd5wCi8/Unak3pdK
+        1zVcSgqxw9FzeSzedGSOdN2lyKLJGm6Pz7NfsfLwKFQ8ZaTrFkdWXGKXk2OPULW5zZcuvaW0OsQuE1Pv
+        4KX7fek1mQE8mX5vLhFbSIlZmDnvS6/SH6SvJPaRf69+TdcfSGWgdAdQugMo3QGU7gBKdwClO4DSHUDp
+        DqB0B1C6AwLpsgkjmzHEPoF0GR/gSX9lCKTLibUcoBK7yPa5bKP75WVjK47l7ptLxBaD4y9QvaPLLKSx
+        esRaR1jXLdNw/BrU2kYjXer6ljZ05O6Zy6TcDI8/R2T3qZ9GMKIJ1GbO4u6zt+ZrpFzIlMWyllww3/hD
+        uiSewopDF3heWkZE+Ib2MajV2wLPxdIlq7YWRuu6Lj40t5F/5VJ+0n/D5wiXlEqX6FKztKEdyY7LhRWX
+        Q0h/jhzwy5SzTDtH9/aFjkyHS/8e/YSkxVmSHSo09czvI5MVMs8vc/2hTnXml85YCaU7CKU7CKU7CKVX
+        PHX4Br5dOK5Bl1q1AAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

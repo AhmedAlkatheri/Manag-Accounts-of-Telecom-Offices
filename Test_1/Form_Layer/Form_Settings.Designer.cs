@@ -33,12 +33,12 @@
             this.category_bt = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunch_bt = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.WandE = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.telephone_bt = new Bunifu.Framework.UI.BunifuFlatButton();
             this.close_bt = new Bunifu.Framework.UI.BunifuFlatButton();
             this.name = new System.Windows.Forms.Label();
             this.deposit_bt = new Bunifu.Framework.UI.BunifuFlatButton();
             this.slice_bt = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.telephone_bt = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.WandE = new Bunifu.Framework.UI.BunifuFlatButton();
             this.user_WendE1 = new Test_1.Uesr_Contril_Layer.User_WendE();
             this.user_telephone1 = new Test_1.Uesr_Contril_Layer.User_telephone();
             this.user_deposit_settings1 = new Test_1.Uesr_Contril_Layer.User_deposit_settings();
@@ -72,7 +72,7 @@
             this.system_bt.IconVisible = true;
             this.system_bt.IconZoom = 90D;
             this.system_bt.IsTab = false;
-            this.system_bt.Location = new System.Drawing.Point(0, 104);
+            this.system_bt.Location = new System.Drawing.Point(0, 77);
             this.system_bt.Margin = new System.Windows.Forms.Padding(6);
             this.system_bt.Name = "system_bt";
             this.system_bt.Normalcolor = System.Drawing.Color.Transparent;
@@ -84,7 +84,7 @@
             this.system_bt.Text = "نظام";
             this.system_bt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.system_bt.Textcolor = System.Drawing.Color.White;
-            this.system_bt.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.system_bt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.system_bt.Click += new System.EventHandler(this.system_bt_Click);
             // 
             // telecom_bt
@@ -109,7 +109,7 @@
             this.telecom_bt.IconVisible = true;
             this.telecom_bt.IconZoom = 90D;
             this.telecom_bt.IsTab = false;
-            this.telecom_bt.Location = new System.Drawing.Point(0, 160);
+            this.telecom_bt.Location = new System.Drawing.Point(0, 133);
             this.telecom_bt.Margin = new System.Windows.Forms.Padding(6);
             this.telecom_bt.Name = "telecom_bt";
             this.telecom_bt.Normalcolor = System.Drawing.Color.Transparent;
@@ -121,7 +121,7 @@
             this.telecom_bt.Text = "اتصالات";
             this.telecom_bt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.telecom_bt.Textcolor = System.Drawing.Color.White;
-            this.telecom_bt.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.telecom_bt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telecom_bt.Click += new System.EventHandler(this.telecom_bt_Click);
             // 
             // category_bt
@@ -146,7 +146,7 @@
             this.category_bt.IconVisible = true;
             this.category_bt.IconZoom = 90D;
             this.category_bt.IsTab = false;
-            this.category_bt.Location = new System.Drawing.Point(0, 216);
+            this.category_bt.Location = new System.Drawing.Point(0, 189);
             this.category_bt.Margin = new System.Windows.Forms.Padding(6);
             this.category_bt.Name = "category_bt";
             this.category_bt.Normalcolor = System.Drawing.Color.Transparent;
@@ -158,7 +158,7 @@
             this.category_bt.Text = "فئات";
             this.category_bt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.category_bt.Textcolor = System.Drawing.Color.White;
-            this.category_bt.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.category_bt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.category_bt.Click += new System.EventHandler(this.category_bt_Click);
             // 
             // bunch_bt
@@ -183,7 +183,7 @@
             this.bunch_bt.IconVisible = true;
             this.bunch_bt.IconZoom = 90D;
             this.bunch_bt.IsTab = false;
-            this.bunch_bt.Location = new System.Drawing.Point(0, 272);
+            this.bunch_bt.Location = new System.Drawing.Point(0, 245);
             this.bunch_bt.Margin = new System.Windows.Forms.Padding(6);
             this.bunch_bt.Name = "bunch_bt";
             this.bunch_bt.Normalcolor = System.Drawing.Color.Transparent;
@@ -195,7 +195,7 @@
             this.bunch_bt.Text = "باقات";
             this.bunch_bt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunch_bt.Textcolor = System.Drawing.Color.White;
-            this.bunch_bt.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunch_bt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunch_bt.Click += new System.EventHandler(this.bunch_bt_Click);
             // 
             // panel1
@@ -216,6 +216,80 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(185, 603);
             this.panel1.TabIndex = 86;
+            // 
+            // WandE
+            // 
+            this.WandE.Active = false;
+            this.WandE.Activecolor = System.Drawing.Color.Transparent;
+            this.WandE.BackColor = System.Drawing.Color.Transparent;
+            this.WandE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.WandE.BorderRadius = 0;
+            this.WandE.ButtonText = "ماء وكهرباء";
+            this.WandE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.WandE.DisabledColor = System.Drawing.Color.Gray;
+            this.WandE.Iconcolor = System.Drawing.Color.Transparent;
+            this.WandE.Iconimage = null;
+            this.WandE.Iconimage_right = null;
+            this.WandE.Iconimage_right_Selected = null;
+            this.WandE.Iconimage_Selected = null;
+            this.WandE.IconMarginLeft = 0;
+            this.WandE.IconMarginRight = 0;
+            this.WandE.IconRightVisible = true;
+            this.WandE.IconRightZoom = 0D;
+            this.WandE.IconVisible = true;
+            this.WandE.IconZoom = 90D;
+            this.WandE.IsTab = false;
+            this.WandE.Location = new System.Drawing.Point(0, 413);
+            this.WandE.Margin = new System.Windows.Forms.Padding(6);
+            this.WandE.Name = "WandE";
+            this.WandE.Normalcolor = System.Drawing.Color.Transparent;
+            this.WandE.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(101)))), ((int)(((byte)(131)))));
+            this.WandE.OnHoverTextColor = System.Drawing.Color.White;
+            this.WandE.selected = false;
+            this.WandE.Size = new System.Drawing.Size(185, 44);
+            this.WandE.TabIndex = 90;
+            this.WandE.Text = "ماء وكهرباء";
+            this.WandE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.WandE.Textcolor = System.Drawing.Color.White;
+            this.WandE.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WandE.Click += new System.EventHandler(this.WandE_Click);
+            // 
+            // telephone_bt
+            // 
+            this.telephone_bt.Active = false;
+            this.telephone_bt.Activecolor = System.Drawing.Color.Transparent;
+            this.telephone_bt.BackColor = System.Drawing.Color.Transparent;
+            this.telephone_bt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.telephone_bt.BorderRadius = 0;
+            this.telephone_bt.ButtonText = "هاتف";
+            this.telephone_bt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.telephone_bt.DisabledColor = System.Drawing.Color.Gray;
+            this.telephone_bt.Iconcolor = System.Drawing.Color.Transparent;
+            this.telephone_bt.Iconimage = null;
+            this.telephone_bt.Iconimage_right = null;
+            this.telephone_bt.Iconimage_right_Selected = null;
+            this.telephone_bt.Iconimage_Selected = null;
+            this.telephone_bt.IconMarginLeft = 0;
+            this.telephone_bt.IconMarginRight = 0;
+            this.telephone_bt.IconRightVisible = true;
+            this.telephone_bt.IconRightZoom = 0D;
+            this.telephone_bt.IconVisible = true;
+            this.telephone_bt.IconZoom = 90D;
+            this.telephone_bt.IsTab = false;
+            this.telephone_bt.Location = new System.Drawing.Point(0, 357);
+            this.telephone_bt.Margin = new System.Windows.Forms.Padding(6);
+            this.telephone_bt.Name = "telephone_bt";
+            this.telephone_bt.Normalcolor = System.Drawing.Color.Transparent;
+            this.telephone_bt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(101)))), ((int)(((byte)(131)))));
+            this.telephone_bt.OnHoverTextColor = System.Drawing.Color.White;
+            this.telephone_bt.selected = false;
+            this.telephone_bt.Size = new System.Drawing.Size(185, 44);
+            this.telephone_bt.TabIndex = 89;
+            this.telephone_bt.Text = "هاتف";
+            this.telephone_bt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.telephone_bt.Textcolor = System.Drawing.Color.White;
+            this.telephone_bt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.telephone_bt.Click += new System.EventHandler(this.telephone_bt_Click);
             // 
             // close_bt
             // 
@@ -239,7 +313,7 @@
             this.close_bt.IconVisible = true;
             this.close_bt.IconZoom = 90D;
             this.close_bt.IsTab = false;
-            this.close_bt.Location = new System.Drawing.Point(0, 552);
+            this.close_bt.Location = new System.Drawing.Point(0, 525);
             this.close_bt.Margin = new System.Windows.Forms.Padding(6);
             this.close_bt.Name = "close_bt";
             this.close_bt.Normalcolor = System.Drawing.Color.Transparent;
@@ -251,17 +325,17 @@
             this.close_bt.Text = "خروج";
             this.close_bt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.close_bt.Textcolor = System.Drawing.Color.White;
-            this.close_bt.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.close_bt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.close_bt.Click += new System.EventHandler(this.close_bt_Click);
             // 
             // name
             // 
             this.name.AutoSize = true;
-            this.name.Font = new System.Drawing.Font("Droid Arabic Kufi", 17F);
+            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
             this.name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.name.Location = new System.Drawing.Point(49, 30);
+            this.name.Location = new System.Drawing.Point(57, 28);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(95, 43);
+            this.name.Size = new System.Drawing.Size(72, 29);
             this.name.TabIndex = 87;
             this.name.Text = "اعدادات";
             // 
@@ -287,7 +361,7 @@
             this.deposit_bt.IconVisible = true;
             this.deposit_bt.IconZoom = 90D;
             this.deposit_bt.IsTab = false;
-            this.deposit_bt.Location = new System.Drawing.Point(0, 496);
+            this.deposit_bt.Location = new System.Drawing.Point(0, 469);
             this.deposit_bt.Margin = new System.Windows.Forms.Padding(6);
             this.deposit_bt.Name = "deposit_bt";
             this.deposit_bt.Normalcolor = System.Drawing.Color.Transparent;
@@ -299,7 +373,7 @@
             this.deposit_bt.Text = "ايداع";
             this.deposit_bt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.deposit_bt.Textcolor = System.Drawing.Color.White;
-            this.deposit_bt.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deposit_bt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deposit_bt.Click += new System.EventHandler(this.deposit_bt_Click);
             // 
             // slice_bt
@@ -324,7 +398,7 @@
             this.slice_bt.IconVisible = true;
             this.slice_bt.IconZoom = 90D;
             this.slice_bt.IsTab = false;
-            this.slice_bt.Location = new System.Drawing.Point(0, 328);
+            this.slice_bt.Location = new System.Drawing.Point(0, 301);
             this.slice_bt.Margin = new System.Windows.Forms.Padding(6);
             this.slice_bt.Name = "slice_bt";
             this.slice_bt.Normalcolor = System.Drawing.Color.Transparent;
@@ -336,82 +410,8 @@
             this.slice_bt.Text = "شرائح";
             this.slice_bt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.slice_bt.Textcolor = System.Drawing.Color.White;
-            this.slice_bt.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.slice_bt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.slice_bt.Click += new System.EventHandler(this.slice_bt_Click);
-            // 
-            // telephone_bt
-            // 
-            this.telephone_bt.Active = false;
-            this.telephone_bt.Activecolor = System.Drawing.Color.Transparent;
-            this.telephone_bt.BackColor = System.Drawing.Color.Transparent;
-            this.telephone_bt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.telephone_bt.BorderRadius = 0;
-            this.telephone_bt.ButtonText = "هاتف";
-            this.telephone_bt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.telephone_bt.DisabledColor = System.Drawing.Color.Gray;
-            this.telephone_bt.Iconcolor = System.Drawing.Color.Transparent;
-            this.telephone_bt.Iconimage = null;
-            this.telephone_bt.Iconimage_right = null;
-            this.telephone_bt.Iconimage_right_Selected = null;
-            this.telephone_bt.Iconimage_Selected = null;
-            this.telephone_bt.IconMarginLeft = 0;
-            this.telephone_bt.IconMarginRight = 0;
-            this.telephone_bt.IconRightVisible = true;
-            this.telephone_bt.IconRightZoom = 0D;
-            this.telephone_bt.IconVisible = true;
-            this.telephone_bt.IconZoom = 90D;
-            this.telephone_bt.IsTab = false;
-            this.telephone_bt.Location = new System.Drawing.Point(0, 384);
-            this.telephone_bt.Margin = new System.Windows.Forms.Padding(6);
-            this.telephone_bt.Name = "telephone_bt";
-            this.telephone_bt.Normalcolor = System.Drawing.Color.Transparent;
-            this.telephone_bt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(101)))), ((int)(((byte)(131)))));
-            this.telephone_bt.OnHoverTextColor = System.Drawing.Color.White;
-            this.telephone_bt.selected = false;
-            this.telephone_bt.Size = new System.Drawing.Size(185, 44);
-            this.telephone_bt.TabIndex = 89;
-            this.telephone_bt.Text = "هاتف";
-            this.telephone_bt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.telephone_bt.Textcolor = System.Drawing.Color.White;
-            this.telephone_bt.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.telephone_bt.Click += new System.EventHandler(this.telephone_bt_Click);
-            // 
-            // WandE
-            // 
-            this.WandE.Active = false;
-            this.WandE.Activecolor = System.Drawing.Color.Transparent;
-            this.WandE.BackColor = System.Drawing.Color.Transparent;
-            this.WandE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.WandE.BorderRadius = 0;
-            this.WandE.ButtonText = "ماء وكهرباء";
-            this.WandE.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.WandE.DisabledColor = System.Drawing.Color.Gray;
-            this.WandE.Iconcolor = System.Drawing.Color.Transparent;
-            this.WandE.Iconimage = null;
-            this.WandE.Iconimage_right = null;
-            this.WandE.Iconimage_right_Selected = null;
-            this.WandE.Iconimage_Selected = null;
-            this.WandE.IconMarginLeft = 0;
-            this.WandE.IconMarginRight = 0;
-            this.WandE.IconRightVisible = true;
-            this.WandE.IconRightZoom = 0D;
-            this.WandE.IconVisible = true;
-            this.WandE.IconZoom = 90D;
-            this.WandE.IsTab = false;
-            this.WandE.Location = new System.Drawing.Point(0, 440);
-            this.WandE.Margin = new System.Windows.Forms.Padding(6);
-            this.WandE.Name = "WandE";
-            this.WandE.Normalcolor = System.Drawing.Color.Transparent;
-            this.WandE.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(101)))), ((int)(((byte)(131)))));
-            this.WandE.OnHoverTextColor = System.Drawing.Color.White;
-            this.WandE.selected = false;
-            this.WandE.Size = new System.Drawing.Size(185, 44);
-            this.WandE.TabIndex = 90;
-            this.WandE.Text = "ماء وكهرباء";
-            this.WandE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.WandE.Textcolor = System.Drawing.Color.White;
-            this.WandE.TextFont = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WandE.Click += new System.EventHandler(this.WandE_Click);
             // 
             // user_WendE1
             // 

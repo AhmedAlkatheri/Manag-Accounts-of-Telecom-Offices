@@ -85,10 +85,34 @@ namespace Test_1.Form_Layer
             else if (ststs == "delete_acc")
             {
                 acc.DELETE_Account_Table(ID);
+                acc.DELETE_deposit_Table_and_ID_Account(ID);
+                acc.DELETE_debt_Table_and_ID_Account(ID);
 
                 fl.label1.Text = "تمت العملية بنجاح";
                 fl.ShowDialog();
             }
+            else if (ststs == "delete_user")
+            {
+                acc.DELETE_user_Table(ID);
+
+                fl.label1.Text = "تمت العملية بنجاح";
+                fl.ShowDialog();
+            }
+            else if (ststs == "delete_client")
+            {
+                acc.DELETE_client_Table(ID);
+
+                fl.label1.Text = "تمت العملية بنجاح";
+                fl.ShowDialog();
+            }
+            else if (ststs == "delete_debt")
+            {
+                acc.DELETE_debt(ID);
+
+                fl.label1.Text = "تمت العملية بنجاح";
+                fl.ShowDialog();
+            }
+
             else
             {
                 Form_not_logged fn = new Form_not_logged();

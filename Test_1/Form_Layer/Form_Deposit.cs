@@ -12,15 +12,22 @@ namespace Test_1.Form_Layer
 {
     public partial class Form_Deposit : Form
     {
-        public string stats1 = " ";
+        public string stats1;
         Business_Layer.Accounts acc = new Business_Layer.Accounts();
         public Form_Deposit()
         {
             InitializeComponent();
-
-            system_cob.DataSource = acc.GET_NAME_system();
-            system_cob.DisplayMember = "NAME_system";
-            system_cob.ValueMember = "ID_system";
+            try
+            {
+                system_cob.DataSource = acc.GET_NAME_system();
+                system_cob.DisplayMember = "NAME_system";
+                system_cob.ValueMember = "ID_system";
+            }
+            catch
+            {
+                Form_contact FC = new Form_contact();
+                FC.ShowDialog();
+            } 
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)
@@ -35,7 +42,6 @@ namespace Test_1.Form_Layer
         {
             Form_logged fl = new Form_logged();
             Form_not_logged fn = new Form_not_logged();
-            Form_main FM = new Form_main();
 
             if (system_cob.Text != string.Empty && BALANCE_tx.Text != string.Empty && for_on_tx.Text != string.Empty)
             {

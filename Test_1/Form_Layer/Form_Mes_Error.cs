@@ -17,7 +17,7 @@ namespace Test_1.Form_Layer
             InitializeComponent();
         }
 
-        private void pay_bt_Click(object sender, EventArgs e)
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             this.Close();
         }

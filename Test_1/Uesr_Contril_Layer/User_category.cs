@@ -19,6 +19,9 @@ namespace Test_1.Uesr_Contril_Layer
         {
             InitializeComponent();
             DataGrid1.DataSource = S.SHOW_category_Table();
+
+            DataGrid1.Columns[0].Visible    = false;
+            DataGrid1.Columns[1].Width      = 120;
         }
 
         private void insert_bt_Click(object sender, EventArgs e)

@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Test_1
+namespace Test_1.Form_Layer
 {
-    public partial class Form3 : Form
+    public partial class Form_About : Form
     {
-        public Form3()
+        public Form_About()
         {
             InitializeComponent();
+        }
+
+        private void but_close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

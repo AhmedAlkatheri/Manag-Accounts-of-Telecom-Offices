@@ -20,6 +20,9 @@ namespace Test_1.Uesr_Contril_Layer
         {
             InitializeComponent();
             DataGrid1.DataSource = S.SHOW_system_Table();
+
+            DataGrid1.Columns[0].Visible    = false;
+            DataGrid1.Columns[1].Width      = 120;
         }
 
         private void updata_bt_Click(object sender, EventArgs e)
@@ -47,6 +50,10 @@ namespace Test_1.Uesr_Contril_Layer
             IA.ShowDialog();
 
             DataGrid1.DataSource = S.SHOW_system_Table();
+
+            Form_Layer.Form_Insert_Alter fia = new Form_Layer.Form_Insert_Alter();
+            fia.system_cob.Refresh();
+
         }
 
         private void alter_bt_Click(object sender, EventArgs e)
@@ -85,6 +92,8 @@ namespace Test_1.Uesr_Contril_Layer
         private void TheAmount_tx_OnValueChanged(object sender, EventArgs e)
         {
             DataGrid1.DataSource = S.Search_system_Table(Search_tx.Text);
+            DataGrid1.Columns[0].Visible = false;
+            DataGrid1.Columns[1].Width = 120;
         }
     }
 }

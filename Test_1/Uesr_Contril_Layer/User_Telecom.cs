@@ -19,6 +19,9 @@ namespace Test_1.Uesr_Contril_Layer
         {
             InitializeComponent();
             DataGrid1.DataSource = S.SHOW_telecom_Table();
+
+            DataGrid1.Columns[0].Visible    = false;
+            DataGrid1.Columns[1].Width      = 120;
         }
 
         private void insert_bt_Click(object sender, EventArgs e)
@@ -27,12 +30,12 @@ namespace Test_1.Uesr_Contril_Layer
             IA.name.Text = "اتصالات جديدة";
             IA.name.Focus();
             IA.label1.Text = "اسم شركة";
-            IA.label2.Text = "اسم النظام";
-            IA.label2.Visible = true;
+            //IA.label2.Text = "اسم النظام";
+            IA.label2.Visible = false;
             IA.label3.Visible = false;
             IA.label4.Visible = false;
             IA.label5.Visible = false;
-            IA.system_cob.Visible = true;
+            IA.system_cob.Visible = false;
             IA.telecom_cob.Visible = false;
             IA.with_ch.Visible = false;
             IA.whth_gro.Visible = false;
@@ -59,12 +62,12 @@ namespace Test_1.Uesr_Contril_Layer
             IA.name.Text = "تعديل اتصالات";
             IA.name.Focus();
             IA.label1.Text = "اسم شركة";
-            IA.label2.Text = "اسم النظام";
-            IA.label2.Visible = true;
+            //IA.label2.Text = "اسم النظام";
+            IA.label2.Visible = false;
             IA.label3.Visible = false;
             IA.label4.Visible = false;
             IA.label5.Visible = false;
-            IA.system_cob.Visible = true;
+            IA.system_cob.Visible = false;
             IA.telecom_cob.Visible = false;
             IA.with_ch.Visible = false;
             IA.whth_gro.Visible = false;
@@ -73,7 +76,7 @@ namespace Test_1.Uesr_Contril_Layer
 
             IA.ID = Convert.ToInt32(this.DataGrid1.CurrentRow.Cells[0].Value.ToString());
             IA.name_tx.Text = this.DataGrid1.CurrentRow.Cells[1].Value.ToString();
-            IA.system_cob.Text = this.DataGrid1.CurrentRow.Cells[2].Value.ToString();
+            //IA.system_cob.Text = this.DataGrid1.CurrentRow.Cells[2].Value.ToString();
             IA.ShowDialog();
 
             DataGrid1.DataSource = S.SHOW_telecom_Table();

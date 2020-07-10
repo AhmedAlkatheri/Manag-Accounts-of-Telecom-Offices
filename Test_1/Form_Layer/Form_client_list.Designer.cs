@@ -53,7 +53,7 @@
             this.DG_list.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -96,11 +96,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Droid Arabic Kufi", 17F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.label1.Location = new System.Drawing.Point(49, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 43);
+            this.label1.Size = new System.Drawing.Size(109, 29);
             this.label1.TabIndex = 90;
             this.label1.Text = "اختيار حساب";
             // 
@@ -113,7 +113,7 @@
             this.but_close.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.but_close.DisabledFillColor = System.Drawing.Color.Gray;
             this.but_close.DisabledForecolor = System.Drawing.Color.White;
-            this.but_close.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.but_close.ForeColor = System.Drawing.Color.White;
             this.but_close.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.but_close.IconPadding = 10;
@@ -147,7 +147,7 @@
             this.but_ok.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.but_ok.DisabledFillColor = System.Drawing.Color.Gray;
             this.but_ok.DisabledForecolor = System.Drawing.Color.White;
-            this.but_ok.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.but_ok.ForeColor = System.Drawing.Color.White;
             this.but_ok.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.but_ok.IconPadding = 10;
@@ -187,6 +187,7 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_client_list";
+            this.Load += new System.EventHandler(this.Form_client_list_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DG_list)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

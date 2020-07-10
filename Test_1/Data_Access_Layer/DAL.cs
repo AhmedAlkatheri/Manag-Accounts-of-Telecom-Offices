@@ -14,21 +14,21 @@ namespace Test_1.Data_Access_Layer
 
         public DAL()
         {
-            sqlconnection = new SqlConnection(@"Server=.\SQLEXPRESS; Database=MOA; integrated security=true");
+            //sqlconnection = new SqlConnection(@"Server=.\SQLEXPRESS; Database=MOA; integrated security=true");
 
             //sqlconnection = new SqlConnection(@"Server=.\SQLEXPRESS; Database=Director of Entry AND Exit_DB; integrated security=true; User Instance=true; Trusted_Connection=Yes");
 
-            //string mode = Properties.Settings.Default.Mode;
-            //if (mode == "SQL")
-            //{
-            //    sqlconnection = new SqlConnection(@"Server=" + Properties.Settings.Default.Server + "; Database=" +
-            //                                        Properties.Settings.Default.Database + "; Integrated Security=false; User ID=" +
-            //                                        Properties.Settings.Default.ID + "; Password=" + Properties.Settings.Default.Password + "");
-            //}
-            //else
-            //{
-            //    sqlconnection = new SqlConnection(@"Server=" + Properties.Settings.Default.Server + "; Database=" + Properties.Settings.Default.Database + "; Integrated Security=true");
-            //}
+            string mode = Properties.Settings.Default.Mode;
+            if (mode == "SQL")
+            {
+                sqlconnection = new SqlConnection(@"Server=" + Properties.Settings.Default.Server + "; Database=" +
+                                                    Properties.Settings.Default.Database + "; Integrated Security=false; User ID=" +
+                                                    Properties.Settings.Default.ID + "; Password=" + Properties.Settings.Default.Password + "");
+            }
+            else
+            {
+                sqlconnection = new SqlConnection(@"Server=" + Properties.Settings.Default.Server + "; Database=" + Properties.Settings.Default.Database + "; Integrated Security=true");
+            }
         }
 
         // TO OPEN THE connection

@@ -67,7 +67,7 @@
             this.Search_tx.BorderThickness = 3;
             this.Search_tx.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.Search_tx.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Search_tx.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Search_tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Search_tx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Search_tx.isPassword = false;
             this.Search_tx.Location = new System.Drawing.Point(313, 30);
@@ -84,10 +84,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Font = new System.Drawing.Font("Droid Arabic Kufi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(458, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 28);
+            this.label3.Size = new System.Drawing.Size(55, 18);
             this.label3.TabIndex = 112;
             this.label3.Text = "بحث عن ";
             this.label3.Visible = false;
@@ -101,7 +101,7 @@
             this.updata_bt.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.updata_bt.DisabledFillColor = System.Drawing.Color.Gray;
             this.updata_bt.DisabledForecolor = System.Drawing.Color.White;
-            this.updata_bt.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updata_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updata_bt.ForeColor = System.Drawing.Color.White;
             this.updata_bt.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.updata_bt.IconPadding = 10;
@@ -136,7 +136,7 @@
             this.alter_bt.DisabledFillColor = System.Drawing.Color.Gray;
             this.alter_bt.DisabledForecolor = System.Drawing.Color.White;
             this.alter_bt.Enabled = false;
-            this.alter_bt.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alter_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alter_bt.ForeColor = System.Drawing.Color.White;
             this.alter_bt.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.alter_bt.IconPadding = 10;
@@ -169,7 +169,7 @@
             this.delete_bt.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.delete_bt.DisabledFillColor = System.Drawing.Color.Gray;
             this.delete_bt.DisabledForecolor = System.Drawing.Color.White;
-            this.delete_bt.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete_bt.ForeColor = System.Drawing.Color.White;
             this.delete_bt.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.delete_bt.IconPadding = 10;
@@ -203,7 +203,7 @@
             this.insert_bt.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.insert_bt.DisabledFillColor = System.Drawing.Color.Gray;
             this.insert_bt.DisabledForecolor = System.Drawing.Color.White;
-            this.insert_bt.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.insert_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.insert_bt.ForeColor = System.Drawing.Color.White;
             this.insert_bt.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.insert_bt.IconPadding = 10;
@@ -238,8 +238,8 @@
             this.DataGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.DataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(63)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -256,7 +256,7 @@
             this.DataGrid1.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGrid1.DoubleBuffered = true;
             this.DataGrid1.EnableHeadersVisualStyles = false;
-            this.DataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(63)))), ((int)(((byte)(80)))));
+            this.DataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.DataGrid1.HeaderForeColor = System.Drawing.Color.White;
             this.DataGrid1.Location = new System.Drawing.Point(200, 112);
             this.DataGrid1.Name = "DataGrid1";
@@ -272,7 +272,7 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGrid1.RowHeadersVisible = false;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGrid1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.LightGray;
             this.DataGrid1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
@@ -284,11 +284,11 @@
             // name
             // 
             this.name.AutoSize = true;
-            this.name.Font = new System.Drawing.Font("Droid Arabic Kufi", 17F);
+            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
             this.name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.name.Location = new System.Drawing.Point(667, 30);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(67, 43);
+            this.name.Size = new System.Drawing.Size(50, 29);
             this.name.TabIndex = 106;
             this.name.Text = "ايداع";
             // 
@@ -301,7 +301,7 @@
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.Gray;
             this.bunifuButton1.DisabledForecolor = System.Drawing.Color.White;
-            this.bunifuButton1.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuButton1.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton1.IconPadding = 10;
@@ -334,7 +334,7 @@
             this.alarm_tx.BorderThickness = 3;
             this.alarm_tx.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.alarm_tx.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.alarm_tx.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alarm_tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alarm_tx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.alarm_tx.isPassword = false;
             this.alarm_tx.Location = new System.Drawing.Point(89, 305);
@@ -350,10 +350,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("Droid Arabic Kufi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 278);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(28, 274);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 22);
+            this.label1.Size = new System.Drawing.Size(147, 15);
             this.label1.TabIndex = 115;
             this.label1.Text = "تذكيري عند وصول قيمه الايداع الى";
             // 
@@ -366,7 +366,7 @@
             this.BALANCE_tx.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.BALANCE_tx.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.BALANCE_tx.Enabled = false;
-            this.BALANCE_tx.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BALANCE_tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BALANCE_tx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BALANCE_tx.isPassword = false;
             this.BALANCE_tx.Location = new System.Drawing.Point(24, 217);
@@ -389,26 +389,26 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Droid Arabic Kufi", 11F);
-            this.label2.Location = new System.Drawing.Point(56, 185);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.label2.Location = new System.Drawing.Point(67, 186);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 28);
+            this.label2.Size = new System.Drawing.Size(72, 18);
             this.label2.TabIndex = 118;
             this.label2.Text = "رصيد الحالي";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Droid Arabic Kufi", 11F);
-            this.label4.Location = new System.Drawing.Point(74, 112);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.label4.Location = new System.Drawing.Point(86, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 28);
+            this.label4.Size = new System.Drawing.Size(37, 18);
             this.label4.TabIndex = 117;
             this.label4.Text = "النظام";
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(24, 147);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(49, 23);
@@ -419,7 +419,7 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(24, 305);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(59, 32);

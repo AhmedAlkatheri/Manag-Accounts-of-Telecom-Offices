@@ -63,7 +63,7 @@
             this.EXH_tx.BorderThickness = 3;
             this.EXH_tx.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.EXH_tx.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EXH_tx.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EXH_tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EXH_tx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.EXH_tx.isPassword = false;
             this.EXH_tx.Location = new System.Drawing.Point(230, 325);
@@ -78,10 +78,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(69, 337);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 31);
+            this.label5.Size = new System.Drawing.Size(39, 20);
             this.label5.TabIndex = 57;
             this.label5.Text = "منفوق";
             // 
@@ -93,7 +93,7 @@
             this.REC_tx.BorderThickness = 3;
             this.REC_tx.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.REC_tx.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.REC_tx.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.REC_tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.REC_tx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.REC_tx.isPassword = false;
             this.REC_tx.Location = new System.Drawing.Point(230, 260);
@@ -109,10 +109,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(69, 272);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 31);
+            this.label4.Size = new System.Drawing.Size(35, 20);
             this.label4.TabIndex = 56;
             this.label4.Text = "مستلم";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -120,11 +120,11 @@
             // name
             // 
             this.name.AutoSize = true;
-            this.name.Font = new System.Drawing.Font("Droid Arabic Kufi", 17F);
+            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
             this.name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.name.Location = new System.Drawing.Point(67, 24);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(123, 43);
+            this.name.Size = new System.Drawing.Size(85, 29);
             this.name.TabIndex = 55;
             this.name.Text = "نظام جديد";
             // 
@@ -136,7 +136,7 @@
             this.name_tx.BorderThickness = 3;
             this.name_tx.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.name_tx.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.name_tx.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name_tx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.name_tx.isPassword = false;
             this.name_tx.Location = new System.Drawing.Point(230, 95);
@@ -157,7 +157,7 @@
             this.but_close.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.but_close.DisabledFillColor = System.Drawing.Color.Gray;
             this.but_close.DisabledForecolor = System.Drawing.Color.White;
-            this.but_close.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.but_close.ForeColor = System.Drawing.Color.White;
             this.but_close.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.but_close.IconPadding = 10;
@@ -191,7 +191,7 @@
             this.but_ok.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.but_ok.DisabledFillColor = System.Drawing.Color.Gray;
             this.but_ok.DisabledForecolor = System.Drawing.Color.White;
-            this.but_ok.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.but_ok.ForeColor = System.Drawing.Color.White;
             this.but_ok.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.but_ok.IconPadding = 10;
@@ -219,10 +219,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(69, 209);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 31);
+            this.label3.Size = new System.Drawing.Size(55, 20);
             this.label3.TabIndex = 54;
             this.label3.Text = "اتصالات";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -230,20 +230,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(69, 157);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 31);
+            this.label2.Size = new System.Drawing.Size(31, 20);
             this.label2.TabIndex = 53;
             this.label2.Text = "نظام";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(69, 108);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 31);
+            this.label1.Size = new System.Drawing.Size(60, 20);
             this.label1.TabIndex = 52;
             this.label1.Text = "اسم النظام";
             // 
@@ -253,7 +253,7 @@
             this.system_cob.FormattingEnabled = true;
             this.system_cob.Location = new System.Drawing.Point(230, 164);
             this.system_cob.Name = "system_cob";
-            this.system_cob.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.system_cob.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.system_cob.Size = new System.Drawing.Size(182, 21);
             this.system_cob.TabIndex = 58;
             // 
@@ -263,7 +263,7 @@
             this.telecom_cob.FormattingEnabled = true;
             this.telecom_cob.Location = new System.Drawing.Point(230, 216);
             this.telecom_cob.Name = "telecom_cob";
-            this.telecom_cob.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.telecom_cob.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.telecom_cob.Size = new System.Drawing.Size(182, 21);
             this.telecom_cob.TabIndex = 59;
             this.telecom_cob.SelectedIndexChanged += new System.EventHandler(this.telecom_cob_SelectedIndexChanged);
@@ -271,11 +271,11 @@
             // with_ch
             // 
             this.with_ch.AutoSize = true;
-            this.with_ch.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F);
+            this.with_ch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.with_ch.Location = new System.Drawing.Point(51, 392);
             this.with_ch.Name = "with_ch";
             this.with_ch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.with_ch.Size = new System.Drawing.Size(96, 35);
+            this.with_ch.Size = new System.Drawing.Size(68, 24);
             this.with_ch.TabIndex = 61;
             this.with_ch.Text = "مع سلفة";
             this.with_ch.UseVisualStyleBackColor = true;
@@ -298,20 +298,20 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(283, 89);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 31);
+            this.label8.Size = new System.Drawing.Size(39, 20);
             this.label8.TabIndex = 68;
             this.label8.Text = "منفوق";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(283, 24);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 31);
+            this.label9.Size = new System.Drawing.Size(35, 20);
             this.label9.TabIndex = 67;
             this.label9.Text = "مستلم";
             // 
@@ -323,7 +323,7 @@
             this.EXH_WITH_tx.BorderThickness = 3;
             this.EXH_WITH_tx.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.EXH_WITH_tx.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EXH_WITH_tx.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EXH_WITH_tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EXH_WITH_tx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.EXH_WITH_tx.isPassword = false;
             this.EXH_WITH_tx.Location = new System.Drawing.Point(0, 74);
@@ -343,7 +343,7 @@
             this.REC_WITH_tx.BorderThickness = 3;
             this.REC_WITH_tx.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.REC_WITH_tx.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.REC_WITH_tx.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.REC_WITH_tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.REC_WITH_tx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.REC_WITH_tx.isPassword = false;
             this.REC_WITH_tx.Location = new System.Drawing.Point(0, 11);
@@ -358,20 +358,20 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(-161, 86);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 31);
+            this.label6.Size = new System.Drawing.Size(39, 20);
             this.label6.TabIndex = 66;
             this.label6.Text = "منفوق";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Droid Arabic Kufi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(-161, 21);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 31);
+            this.label7.Size = new System.Drawing.Size(35, 20);
             this.label7.TabIndex = 65;
             this.label7.Text = "مستلم";
             // 
@@ -395,12 +395,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form_Insert_Alter";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Insert_Alter";
+            this.Load += new System.EventHandler(this.Form_Insert_Alter_Load);
             this.whth_gro.ResumeLayout(false);
             this.whth_gro.PerformLayout();
             this.ResumeLayout(false);

@@ -23,6 +23,9 @@ namespace Test_1.Uesr_Contril_Layer
             InitializeComponent();
             DataGrid1.DataSource = S.SHOW_deposit_Table();
 
+            DataGrid1.Columns[0].Visible    = false;
+            DataGrid1.Columns[5].Visible    = false;
+
             system_cob.DataSource = acc.GET_NAME_system();
             system_cob.DisplayMember = "NAME_system";
             system_cob.ValueMember = "ID_system";

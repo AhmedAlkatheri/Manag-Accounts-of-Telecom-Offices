@@ -22,19 +22,31 @@ namespace Test_1.Form_Layer
         public Form_Insert_Alter()
         {
             InitializeComponent();
+            try
+            {
+                
+                system_cob.DataSource = acc.GET_NAME_system();
+                system_cob.DisplayMember = "NAME_system";
+                system_cob.ValueMember = "ID_system";
+                
+                telecom_cob.DataSource = acc.GET_NAME_telecom();
+                telecom_cob.DisplayMember = "NAME_telecom";
+                telecom_cob.ValueMember = "ID_telecom";
 
-            system_cob.DataSource = acc.GET_NAME_system();
-            system_cob.DisplayMember = "NAME_system";
-            system_cob.ValueMember = "ID_system";
+                with_ch.Checked = false;
+                whth_gro.Enabled = false;
 
-            telecom_cob.DataSource = acc.GET_NAME_telecom();
-            telecom_cob.DisplayMember = "NAME_telecom";
-            telecom_cob.ValueMember = "ID_telecom";
-
-            with_ch.Checked = false;
-            whth_gro.Enabled = false;
-
-            name_tx.Focus();
+                name_tx.Focus();
+            }
+            catch
+            {
+                Form_contact FC = new Form_contact();
+                FC.Error_txt.Visible = true;
+                FC.Error_pic.Visible = true;
+                FC.ShowDialog();
+                FC.Error_txt.Visible = false;
+                FC.Error_pic.Visible = false;
+            }
         }
         private void VERIFY_NAME()
         {
@@ -153,6 +165,7 @@ namespace Test_1.Form_Layer
                     fn.label1.Text = "فشلت العملية";
                     fn.ShowDialog();
                 }
+                Close();
             }
             else if (ststs == "insert_tel")
             {
@@ -167,7 +180,7 @@ namespace Test_1.Form_Layer
                         return;
                     }
 
-                    S.ADD_telecom_Table(name_tx.Text, Convert.ToInt32(system_cob.SelectedValue));
+                    S.ADD_telecom_Table(name_tx.Text);
 
                     fl.label1.Text = "تمت العملية بنجاح";
                     fl.ShowDialog();
@@ -182,7 +195,7 @@ namespace Test_1.Form_Layer
             {
                 if (name_tx.Text != string.Empty)
                 {
-                    S.EDIT_telecom_Table(ID, name_tx.Text, Convert.ToInt32(system_cob.SelectedValue));
+                    S.EDIT_telecom_Table(ID, name_tx.Text);
 
                     fl.label1.Text = "تمت العملية بنجاح";
                     fl.ShowDialog();
@@ -192,6 +205,7 @@ namespace Test_1.Form_Layer
                     fn.label1.Text = "فشلت العملية";
                     fn.ShowDialog();
                 }
+                Close();
             }
             else if (ststs == "insert_bun")
             {
@@ -245,6 +259,7 @@ namespace Test_1.Form_Layer
                     fn.label1.Text = "فشلت العملية";
                     fn.ShowDialog();
                 }
+                Close();
             }
             else if (ststs == "insert_cat")
             {
@@ -301,6 +316,7 @@ namespace Test_1.Form_Layer
                     fn.label1.Text = "فشلت العملية";
                     fn.ShowDialog();
                 }
+                Close();
             }
             else if (ststs == "insert_sli")
             {
@@ -350,6 +366,7 @@ namespace Test_1.Form_Layer
                     fn.label1.Text = "فشلت العملية";
                     fn.ShowDialog();
                 }
+                Close();
             }
 
             if (ststs == "insert_tep")
@@ -395,6 +412,7 @@ namespace Test_1.Form_Layer
                     fn.label1.Text = "فشلت العملية";
                     fn.ShowDialog();
                 }
+                Close();
             }
             if (ststs == "insert_WE")
             {
@@ -426,7 +444,6 @@ namespace Test_1.Form_Layer
             {
                 if (name_tx.Text != string.Empty)
                 {
-
                     if_Empty();
 
                     S.EDIT_water_And_Electricity_Table(ID, name_tx.Text, int.Parse(REC_tx.Text), int.Parse(EXH_tx.Text), Convert.ToInt32(system_cob.SelectedValue));
@@ -439,6 +456,7 @@ namespace Test_1.Form_Layer
                     fn.label1.Text = "فشلت العملية";
                     fn.ShowDialog();
                 }
+                Close();
             }
 
             name_tx.Text = "";
@@ -447,13 +465,13 @@ namespace Test_1.Form_Layer
             REC_WITH_tx.Text = "";
             EXH_WITH_tx.Text = "";
 
-            Close();
+            
         }
 
         private void but_close_Click(object sender, EventArgs e)
         {
-            fn.label1.Text = "فشلت العملية";
-            fn.ShowDialog();
+            //fn.label1.Text = "فشلت العملية";
+            //fn.ShowDialog();
 
             name_tx.Text = "";
             REC_tx.Text = "";
@@ -504,6 +522,27 @@ namespace Test_1.Form_Layer
         private void name_tx_Validated(object sender, EventArgs e)
         {
             VERIFY_NAME();
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form_Insert_Alter_Load(object sender, EventArgs e)
+        {
+            system_cob.DataSource = acc.GET_NAME_system();
+            system_cob.DisplayMember = "NAME_system";
+            system_cob.ValueMember = "ID_system";
+
+            telecom_cob.DataSource = acc.GET_NAME_telecom();
+            telecom_cob.DisplayMember = "NAME_telecom";
+            telecom_cob.ValueMember = "ID_telecom";
+
+            with_ch.Checked = false;
+            whth_gro.Enabled = false;
+
+            name_tx.Focus();
         }
     }
 }

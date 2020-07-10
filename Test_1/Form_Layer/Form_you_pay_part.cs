@@ -40,5 +40,13 @@ namespace Test_1.Form_Layer
         {
 
         }
+
+        private void pay_tx_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != 8)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

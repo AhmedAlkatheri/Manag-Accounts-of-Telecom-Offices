@@ -40,22 +40,22 @@
             // name
             // 
             this.name.AutoSize = true;
-            this.name.Font = new System.Drawing.Font("Droid Arabic Kufi", 17F);
+            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
             this.name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.name.Location = new System.Drawing.Point(287, 22);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(68, 43);
+            this.name.Size = new System.Drawing.Size(51, 29);
             this.name.TabIndex = 56;
             this.name.Text = "حذف";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Droid Arabic Kufi", 14F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(84, 82);
+            this.label1.Location = new System.Drawing.Point(112, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 36);
+            this.label1.Size = new System.Drawing.Size(180, 24);
             this.label1.TabIndex = 57;
             this.label1.Text = "هل تريد فعلا حذف المحدد ؟";
             // 
@@ -68,7 +68,7 @@
             this.but_close.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.but_close.DisabledFillColor = System.Drawing.Color.Gray;
             this.but_close.DisabledForecolor = System.Drawing.Color.White;
-            this.but_close.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.but_close.ForeColor = System.Drawing.Color.White;
             this.but_close.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.but_close.IconPadding = 10;
@@ -102,7 +102,7 @@
             this.but_ok.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.but_ok.DisabledFillColor = System.Drawing.Color.Gray;
             this.but_ok.DisabledForecolor = System.Drawing.Color.White;
-            this.but_ok.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.but_ok.ForeColor = System.Drawing.Color.White;
             this.but_ok.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.but_ok.IconPadding = 10;

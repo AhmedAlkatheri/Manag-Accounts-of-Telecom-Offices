@@ -8,113 +8,196 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Test_1.Form_Layer
 {
-    
     public partial class Form_Catch_Exchange : Form
     {
-        public string move, BALANCE = "0", date, time, TYPE="", process="";
+        int rowCunt;
         Business_Layer.Accounts acc = new Business_Layer.Accounts();
-        int ID_Client, ID_system, BALANCE_debt = 0;
-
-        private void Form_Catch_Exchange_Load(object sender, EventArgs e)
-        {
-            BALANCE = "0";
-            client_tx.Text = "";
-            TheAmount_tx.Text = "";
-            text_tx.Text = Text = "";
-            BALANCE_debt = 0;
-            BALANCE = "0";
-           // move = "";
-        }
+        Form_client_list FCL = new Form_client_list();
+        Form_Alternate FA = new Form_Alternate();
+        DateTime dt1, dt2;
 
         public Form_Catch_Exchange()
         {
             InitializeComponent();
+            try
+            {
+                this.Date1.Value = DateTime.Now;
+                this.Date2.Value = DateTime.Now;
+            }
+            catch
+            {
+                Form_contact FC = new Form_contact();
+                FC.Error_txt.Visible = true;
+                FC.Error_pic.Visible = true;
+                FC.ShowDialog();
+                FC.Error_txt.Visible = false;
+                FC.Error_pic.Visible = false;
+            }
         }
+
         private void if_()
         {
-          
-            if (TheAmount_tx.Text == string.Empty)
-                TheAmount_tx.Text = "0";
-            if (BALANCE == string.Empty)
-                BALANCE = "0";
-
+            if (TOTEL_REC_tx.Text == string.Empty)
+                TOTEL_REC_tx.Text = "0";
+            if (TOTEL_EXH_tx.Text == string.Empty)
+                TOTEL_EXH_tx.Text = "0";
         }
-        private void but_close_Click(object sender, EventArgs e)
+        private void sum_Between_Twe_date(string Search, DateTime d1, DateTime d2)
         {
-            Close();
+            DataTable Sum_Dt = new DataTable();
+
+            Sum_Dt = acc.SUM_debt_Table_Where_Catch_Exchange(Search, d1, d2);
+
+            TOTEL_REC_tx.Text = Sum_Dt.Rows[0]["FOR"].ToString();
+            TOTEL_EXH_tx.Text = Sum_Dt.Rows[0]["ON"].ToString();
+            if_();
         }
 
-        private void but_ok_Click(object sender, EventArgs e)
+        private void row_Cunt()
         {
-            Form_logged fl = new Form_logged();
-            Form_not_logged fn = new Form_not_logged();
+            rowCunt = DataGrid1.BindingContext[DataGrid1.DataSource].Count;
+            count_row_tx.Text = rowCunt.ToString();
+        }
 
-            if (client_tx.Text != string.Empty && TheAmount_tx.Text != string.Empty)
+        private void Search_bt_Click(object sender, EventArgs e)
+        {
+            dt1 = Date1.Value.Date;
+            dt2 = Date2.Value.Date;
+            DataTable Dt = new DataTable();
+
+            Dt = acc.SHOW_debt_Table_Where_Catch_Exchange(txtSearch.Text, dt1, dt2);
+            this.DataGrid1.DataSource = Dt;
+            DataGrid1.Columns[0].Visible = false;
+            DataGrid1.Columns[1].Visible = false;
+            DataGrid1.Columns[10].Visible = false;
+            DataGrid1.Columns[11].Visible = false;
+
+            sum_Between_Twe_date(txtSearch.Text, dt1, dt2);
+
+            row_Cunt();
+        }
+
+        private void bunifuFlatButton7_Click(object sender, EventArgs e)
+        {
+            DataTable Dt = new DataTable();
+
+            Dt = acc.SHOW_debt_Table_Where_Catch_Exchange(txtSearch.Text, dt1, dt2);
+            this.DataGrid1.DataSource = Dt;
+
+            sum_Between_Twe_date(txtSearch.Text, dt1, dt2);
+
+            row_Cunt();
+        }
+
+        private void DELETE_bt_Click(object sender, EventArgs e)
+        {
+            try
             {
-                 date = DateTime.Now.ToString("yyyy-MM-dd");
-                 time = DateTime.Now.ToString("hh:mm:ss tt");
+                Form_Delete_Settings FD = new Form_Delete_Settings();
+                FD.ststs = "delete_debt";
+                FD.ID = Convert.ToInt32(this.DataGrid1.CurrentRow.Cells[0].Value.ToString());
+                FD.ShowDialog();
 
-                if (move == "قبض")
-                {
-                    BALANCE = Convert.ToString(acc.GET_BALANCE_debt(ID_Client).Rows[0][0]);
-                    if_();
-                    BALANCE_debt = int.Parse(BALANCE) - int.Parse(TheAmount_tx.Text);
+                DataTable Dt = new DataTable();
 
-                    acc.ADD_debt_Table(Convert.ToDateTime(date), time, process, move, int.Parse(TheAmount_tx.Text), int.Parse("0"), BALANCE_debt, text_tx.Text,
-                                        ID_Client, 1, TYPE, ID_system);
-                  
-                    acc.ADD_Account_Table(Convert.ToDateTime(date), time, process, move, int.Parse(TheAmount_tx.Text), int.Parse("0"), text_tx.Text,
-                            ID_Client, 1, ID_system
-                            , ID_system, TYPE);
+                Dt = acc.SHOW_debt_Table_Where_Catch_Exchange(txtSearch.Text, dt1, dt2);
+                this.DataGrid1.DataSource = Dt;
 
-                    fl.label1.Text = "تمت العملية بنجاح";
-                    fl.ShowDialog();
-                }
+                sum_Between_Twe_date(txtSearch.Text, dt1, dt2);
 
-                if (move == "صرف")
-                {
-                    BALANCE = Convert.ToString(acc.GET_BALANCE_debt(ID_Client).Rows[0][0]);
-                   // if_();
-                    BALANCE_debt = int.Parse(BALANCE) + int.Parse(TheAmount_tx.Text);
+                row_Cunt();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Message Error " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
-                    acc.ADD_debt_Table(Convert.ToDateTime(date), time, process, move, int.Parse("0"), int.Parse(TheAmount_tx.Text), BALANCE_debt, text_tx.Text,
-                                        ID_Client, 1, TYPE, ID_system);
-
-                    acc.ADD_Account_Table(Convert.ToDateTime(date), time, process, move, int.Parse(TheAmount_tx.Text), int.Parse("0"), text_tx.Text,
-                            ID_Client, 1, ID_system
-                            , ID_system, TYPE);
-
-                    fl.label1.Text = "تمت العملية بنجاح";
-                    fl.ShowDialog();
-                }
+        private void PDF_bt_Click(object sender, EventArgs e)
+        {
+            Form_not_logged fn = new Form_not_logged();
+            if (count_row_tx.Text == string.Empty || TOTEL_REC_tx.Text == string.Empty || TOTEL_EXH_tx.Text == string.Empty )
+            {
+                fn.label1.Text = "عفوا , ادخل البيانات أولا";
+                fn.ShowDialog();
             }
             else
             {
-                fn.label1.Text = "فشلت العملية";
-                fn.ShowDialog();
+                string d1 = Date1.Value.Date.ToString("yyyy-MM-dd");
+                string d2 = Date2.Value.Date.ToString("yyyy-MM-dd");
+
+                
+                Report.Form_Catch_Exchange.Form1 FCE = new Report.Form_Catch_Exchange.Form1();
+
+                FCE.R_count_row = count_row_tx.Text;
+                FCE.R_TOTEL_REC = TOTEL_REC_tx.Text;
+                FCE.R_TOTEL_EXH = TOTEL_EXH_tx.Text;
+                FCE.R_date1 = d1;
+                FCE.R_date2 = d2;
+                FCE.Text = "تقرير مقبوضات ومصروفات";
+
+                if (txtSearch.Text == string.Empty || txtSearch.Text == "")
+                    FCE.R_Search = " ";
+                else
+                    FCE.R_Search = txtSearch.Text;
+
+                FCE.Show();
             }
+        }
 
-            client_tx.Text = "";
-            TheAmount_tx.Text = "";
-            text_tx.Text = Text = "";
-            BALANCE_debt = 0;
-            BALANCE = "0";
-            //move = "";
-
-
+        private void txtSearch_OnValueChanged(object sender, EventArgs e)
+        {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Form_Catch_Exchange_Load(object sender, EventArgs e)
         {
-            Form_client_list FCL = new Form_client_list();
-            FCL.ShowDialog();
-            if (FCL.state == "اختيار")
+            
+        }
+
+        private void edit_bt_Click(object sender, EventArgs e)
+        {
+            try
             {
-                ID_Client = Convert.ToInt32(FCL.DG_list.CurrentRow.Cells[0].Value.ToString());
-                client_tx.Text = FCL.DG_list.CurrentRow.Cells[1].Value.ToString();
+                Form_Add_Catch_Exchange FACE = new Form_Add_Catch_Exchange();
+                FACE.name.Text = "تعديل";
+                FACE.status = "Edit";
+                FACE.label4.Visible = true;
+                FACE.move_cob.Visible = true;
+
+                FACE.ID_debt = Convert.ToInt32(this.DataGrid1.CurrentRow.Cells[0].Value.ToString());
+                FACE.ID_Client = Convert.ToInt32(this.DataGrid1.CurrentRow.Cells[10].Value.ToString());
+                FACE.ID_user = Convert.ToInt32(this.DataGrid1.CurrentRow.Cells[11].Value.ToString());
+
+                FACE.move_cob.Text = this.DataGrid1.CurrentRow.Cells[5].Value.ToString();
+
+                FACE.Show();
+                FACE.client_tx.Text = this.DataGrid1.CurrentRow.Cells[4].Value.ToString();
+                FACE.text_tx.Text = this.DataGrid1.CurrentRow.Cells[9].Value.ToString();
+
+                string move1 = FACE.move_cob.Text;
+
+                if (move1 == "قبض")
+                    FACE.TheAmount_tx.Text = this.DataGrid1.CurrentRow.Cells[6].Value.ToString();
+                else if (move1 == "صرف")
+                    FACE.TheAmount_tx.Text = this.DataGrid1.CurrentRow.Cells[7].Value.ToString();
+
+                DataTable Dt = new DataTable();
+
+                Dt = acc.SHOW_debt_Table_Where_Catch_Exchange(txtSearch.Text, dt1, dt2);
+                this.DataGrid1.DataSource = Dt;
+
+                sum_Between_Twe_date(txtSearch.Text, dt1, dt2);
+
+                row_Cunt();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Message Error " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
